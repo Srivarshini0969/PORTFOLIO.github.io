@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact_Form</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body  class="animation">
+    <video autoplay muted loop id="bg-video">
+      <source src="back_video.mp4"type="video/mp4">
+      your browser does'nt support html video.
+    </video>
+    <header>
+      <nav>
+        <div class="name ">Yamala  <span>Sri Varshini </span></div>
+        <ul class="nav-links">
+           <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contact-section">
+      <div class="contact-container">
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <div class="info-box">
+            <div class="icon">&#9993;</div>
+            <div class="info-title">Email</div>
+            <div class="info-detail">varshiniyamala05@gmail.com</div>
+            <a href="mailto:varshiniyamala05@gmail.com" class="info-link">Send a message</a>
+          </div>
+          <div class="info-box">
+            <div class="icon">&#128222;</div>
+            <div class="info-title">Phone</div>
+            <div class="info-detail">(+91) 789-583-2025</div>
+            <a href="tel:+917895832025" class="info-link">Text</a>
+          </div>
+        </div>
+        <!-- Right: Contact Form -->
+        <div class="contact-form-area">
+          <h2 class="cont">Contact <span>Me</span></h2>
+          <p class="pera">💌 Once you hit send, your info reaches me instantly via email.</p>
+          <form action="https://formsubmit.co/varshiniyamala05@gmail.com" class="contact-form" method="POST">
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Your Full Name" required />
+            </div>
+            <div class="input-box">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="input-box textarea-box">
+              <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="send-button">Send message!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

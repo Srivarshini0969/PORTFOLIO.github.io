@@ -1,0 +1,265 @@
+body {
+  /* background-color: #0a0a0a; */
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* padding: 0; */
+}
+
+#bg-video{
+  position:fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.animation{
+  opacity: 0;
+  transform: translateY(50px);
+  animation: magic 1.8s ease-in forwards;
+}
+
+@keyframes magic {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: black;
+  color: #00134d;
+}
+header {
+  width: 100%;
+  padding: 20px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between; /* Keep this if you want logo left, links right */
+}
+
+.name {
+   margin-left: 20px;;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline;
+}
+
+.name span {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-left: auto; /* Pushes nav-links to the right */
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1rem;   /* Increased font size */
+  font-weight: 700;    /* Bolder text */
+  letter-spacing: 1px; /* Optional: more spacing between letters */
+  transition: 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links .active {
+  color: grey;
+
+  text-decoration: none;
+}
+
+.cont{
+  margin-top: 70px ;
+  color: rgb(148, 137, 137);
+
+}
+.cont span{
+color:black;
+
+}
+.timeline {
+
+  position: relative;
+  width: 50%;
+  margin-top: 70px;;
+  padding: 40px 0;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+.left {
+  left: 0;
+  text-align: right;
+}
+.right {
+  left: 50%;
+  text-align: left;
+}
+
+
+.content {
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(147, 137, 137);
+  box-shadow: 3px 6px 17px grey;
+  display: inline-block;
+  max-width: 90%;
+}
+h2 {
+  color: grey;
+}
+h3:hover{
+  text-decoration: underline color(white);
+}
+@media (max-width:420px){
+  .name{
+    display: none;
+  }
+ .cont{
+  display: none;
+ }
+ .container{
+  margin-top: 30px;;
+  width: 60%;
+ }
+ .nav-links{
+  margin-left: 40px;;
+  direction: column;
+ }
+  
+  .active{
+    display:none;
+  }
+}
+
+.about-section {
+  max-width: 600px;
+  height: calc(100vh - 80px); /* Adjust 80px if your header is taller/shorter */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical center */
+  align-items: center;     /* Horizontal center */
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.about-header {
+  text-align: center;              /* Center header */
+  margin-bottom: 12px;
+}
+
+.about-title {
+  font-size: 2rem;                 /* Smaller heading */
+  margin-bottom: 8px;
+}
+
+.about-main {
+  text-align: center;              /* Center main content */
+}
+
+.about-description {
+  font-size: 1rem;                 /* Smaller text */
+  margin-bottom: 20px;
+}
+
+.about-cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-card {
+  background: #f6f6fa;
+  border-radius: 18px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  min-width: 240px;
+  max-width: 260px;
+  height: 240px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-card-icon {
+  font-size: 1.5rem;               /* Smaller icon */
+  margin-bottom: 6px;
+}
+
+.about-card-title {
+  font-size: 1rem;                 /* Smaller title */
+  margin-bottom: 4px;
+}
+
+.about-card-content {
+  font-size: 0.95rem;              /* Smaller content */
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: skyblue; /* Changed to skyblue */
+  color: #19193a;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition:background 0.2s;
+}
+
+.about-btn:hover {
+  background: #0099cc;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .about-cards {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .about-section {
+    margin-top: 90px;
+    padding: 18px 4vw 40px 4vw;
+  }
+}
